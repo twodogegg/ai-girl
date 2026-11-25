@@ -1,0 +1,15 @@
+{
+  "name": "plot18",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "bash scripts/dev.sh",
+    "dev:web": "npm --prefix frontend run dev",
+    "dev:api": "uv run --project backend python -m app",
+    "start:lan": "HOST=0.0.0.0 uv run --project backend python -m app",
+    "build": "npm --prefix frontend run build",
+    "test": "uv run --project backend pytest backend/tests",
+    "lint": "uv run --project backend ruff check backend",
+    "mock:openai": "uv run --project backend python scripts/mock-openai.py"
+  }
+}

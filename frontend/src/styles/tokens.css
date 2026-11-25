@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  --bg: #101114;
+  --bg-deep: #0b0c0e;
+  --fg: #f3f0e8;
+  --surface: #1b1b1d;
+  --raised: #222224;
+  --sunken: #171719;
+  --hover: #2a2a2c;
+  --muted: #9f988b;
+  --subtle: #746f66;
+  --accent: #e8a532;
+  --accent-hover: #f2b64b;
+  --on-accent: #17110a;
+  --danger: #e46c5b;
+  --danger-fill: #c14b3d;
+  --border: rgb(243 240 232 / 0.15);
+  --border-strong: rgb(243 240 232 / 0.24);
+  --glass: rgb(16 17 20 / 0.66);
+  --glass-filter: blur(22px) saturate(132%);
+  --selection: rgb(232 165 50 / 0.28);
+  --dot: rgb(232 165 50 / 0.13);
+  --shadow: inset 1px 1px 0 rgb(243 240 232 / 0.18), inset -1px -1px 0 rgb(16 17 20 / 0.44), 0 18px 48px rgb(16 17 20 / 0.24);
+  --shadow-strong: 0 24px 68px rgb(16 17 20 / 0.44);
+  --glow: 0 0 14px rgb(232 165 50 / 0.18);
+  --font-display: Georgia, "Songti SC", "Noto Serif SC", "Times New Roman", serif;
+  --font-ui: "Geist Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+  --r-xl: 12px;
+  --r-2xl: 18px;
+  --r-3xl: 24px;
+  --r-full: 999px;
+  --page-x: 20px;
+  --header-h: 56px;
+  --nav-h: 60px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --motion: 0.18s cubic-bezier(0.2, 0.7, 0.2, 1);
+  --paper: none;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f1e8;
+  --bg-deep: #f2e8da;
+  --fg: #302821;
+  --surface: #fffdf8;
+  --raised: #faf5ed;
+  --sunken: #f2e8da;
+  --hover: #f2e8da;
+  --muted: #75665a;
+  --subtle: #99887a;
+  --accent: #b34631;
+  --accent-hover: #9c3a28;
+  --on-accent: #fffaf2;
+  --danger: #b94a43;
+  --danger-fill: #b94a43;
+  --border: rgb(48 40 33 / 0.17);
+  --border-strong: rgb(48 40 33 / 0.28);
+  --glass: rgb(250 245 237 / 0.9);
+  --glass-filter: none;
+  --selection: rgb(179 70 49 / 0.22);
+  --dot: rgb(48 40 33 / 0.1);
+  --shadow: 0 1px 0 rgb(255 249 232 / 0.44), 0 2px 1px rgb(105 93 72 / 0.08), 0 11px 25px rgb(48 40 33 / 0.11);
+  --shadow-strong: 0 2px 0 rgb(105 93 72 / 0.1), 0 15px 32px rgb(48 40 33 / 0.14);
+  --glow: 0 0 14px rgb(179 70 49 / 0.14);
+  --paper:
+    repeating-linear-gradient(7deg, transparent 0 12px, rgb(129 109 78 / 0.08) 12px 12.7px, transparent 13px 29px),
+    repeating-linear-gradient(174deg, transparent 0 18px, rgb(255 244 217 / 0.2) 18px 18.8px, transparent 19px 41px),
+    repeating-linear-gradient(21deg, transparent 0 37px, rgb(139 116 81 / 0.05) 37px 37.6px, transparent 38px 71px);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --page-x: 46px;
+    --header-h: 64px;
+  }
+}

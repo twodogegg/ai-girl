@@ -1,0 +1,14 @@
+{
+  "name": "PLOT18 · 深夜关系现场",
+  "short_name": "PLOT18",
+  "description": "选择一个她，开始一段只属于你们的对话。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101114",
+  "theme_color": "#101114",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
